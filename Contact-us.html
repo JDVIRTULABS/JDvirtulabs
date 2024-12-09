@@ -10,7 +10,7 @@
         <!-- Author: FormBold Team -->
         <!-- Learn More: https://formbold.com -->
         <div class="formbold-form-wrapper">
-          <form onsubmit="sendEmail(); reset(); return false;" >
+          <form action="https://formsubmit.co/jdvirtualabs@gmail.com" method="POST" >
               <div class="formbold-input-flex">
                 <div>
                     <label for="firstname" class="formbold-form-label"> First name </label>
@@ -63,7 +63,7 @@
                   <div class="formbold-radio-flex">
                     <div class="formbold-radio-group">
                       <label class="formbold-radio-label">
-                        <input class="formbold-input-radio" type="radio" name="jobtitle" id="jobtitle">
+                        <input class="formbold-input-radio" type="radio" name="Web Design" id="jobtitle">
                         Web Design
                         <span class="formbold-radio-checkmark"></span>
                       </label>
@@ -71,7 +71,7 @@
       
                     <div class="formbold-radio-group">
                       <label class="formbold-radio-label">
-                        <input class="formbold-input-radio" type="radio" name="jobtitle" id="jobtitle">
+                        <input class="formbold-input-radio" type="radio" name="Web Development" id="jobtitle">
                         Web Development
                         <span class="formbold-radio-checkmark"></span>
                       </label>
@@ -79,7 +79,7 @@
       
                     <div class="formbold-radio-group">
                       <label class="formbold-radio-label">
-                        <input class="formbold-input-radio" type="radio" name="jobtitle" id="jobtitle">
+                        <input class="formbold-input-radio" type="radio" name="DigitalMarketing" id="jobtitle">
                         Digital Marketing
                         <span class="formbold-radio-checkmark"></span>
                       </label>
@@ -87,7 +87,7 @@
       
                     <div class="formbold-radio-group">
                       <label class="formbold-radio-label">
-                        <input class="formbold-input-radio" type="radio" name="jobtitle" id="jobtitle">
+                        <input class="formbold-input-radio" type="radio" name="Others" id="jobtitle">
                         Others
                         <span class="formbold-radio-checkmark"></span>
                       </label>
@@ -110,6 +110,7 @@
                   Send Message
               </button>
           </form>
+          <h3 class="email-add">Contact-us: JdVirtualabs@gmail.com</h3>
         </div>
       </div>
       <style>
@@ -118,6 +119,12 @@
           margin: 0;
           padding: 0;
           box-sizing: border-box;
+        }
+        .email-add{
+          display: flex;
+          justify-content: center;
+          font-size: 15px;
+          margin-top: 25px;
         }
         body {
           font-family: "Inter", sans-serif;
@@ -251,25 +258,7 @@
         }
       
       </style>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-      <script>
-      function sendEmail() {
-          Email.send({
-              Host: "smtp.elasticemail.com",  // Elastic Email SMTP server
-              Username: "jdvirtualabs@gmail.com",  // Your Elastic Email account email
-              Password: "8477DB27E489A826449957D00D36FE2B0494",  // It's safer to use the API Key (never the password)
-              To: 'jdvirtualabs@gmail.com',
-              From: document.getElementById("email").value,
-              Subject: document.getElementById("jobtitle").value,
-              Body: document.getElementById("message").value
-          }).then(
-              message => alert(message)
-          );
-      }
-      </script>
-      
+     
 </body>
 
 </html>
